@@ -1,0 +1,9 @@
+<p>homepage works!</p>
+
+<h1>Example</h1>
+<div [ngSwitch]=“potato”>
+    <h1 *ngSwitchCase=“‘Russet’”>{{ potato }} is a Russet Potato.</h1>
+    <h1 *ngSwitchCase=“‘Sweet’”>{{ potato }} is a Sweet Potato.</h1>
+    <h1 *ngSwitchCase=“‘Laura’”>{{ potato }} is a Laura Potato.</h1>
+    <h1 *ngSwitchDefault>{{ potato }} is not a Russet, Sweet, nor Laura Potato.</h1>
+  </div>
