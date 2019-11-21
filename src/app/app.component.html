@@ -14,3 +14,11 @@
 <p>{{todo.value}}</p>
 <span class="input-group-text" (click)="addTodo(todo.value)">Add</span>
 <div class="data">  <ul class="list-instyled">   <li *ngFor="let todo of todoArray">{{todo}}</li>  </ul>  </div>
+<div><i class="material-icons>iconName</i></div>
+<span class="input-group-text" (click)="addTodo(todo.value)"><i class="material-icons">add</i></span>
+// and delete icon inside list item <li *ngFor="let todo of todoArray">{{todo}}<i class="material-icons">delete</i></li>
+
+<li *ngFor="let todo of todoArray">{{todo}} <i (click)="deleteItem(todo)" class="material-icons">delete</i></li>
+
+<form #todoForm= "ngForm" (ngSubmit)="todoSubmit(todoForm.value)"></form>
+<form #todoForm= "ngForm" (ngSubmit)="todoSubmit(todoForm.value); todoForm.resetForm()" ></form>
