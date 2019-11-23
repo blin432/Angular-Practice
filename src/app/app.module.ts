@@ -1,29 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-
-import { AppRoutingModule } from './app-routing.module';
-
+import { HttpModule } from '@angular/http';//had to update
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';//added module to get proper animations
 import { AppComponent } from './app.component';
-import { CoreModule } from './core/core.module';
-import { HomeComponent } from './home/home.component';
-import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent,
-    ContactComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     FormsModule,
-    HttpClientModule,
-    CoreModule
+    HttpModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
