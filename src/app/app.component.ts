@@ -43,6 +43,15 @@ export class AppComponent {
   	}
   }
 
+   /*edit item*/
+   editItem(todo){
+  	for(let i=0 ;i<= this.todoArray.length ;i++){
+  		if(todo== this.todoArray[i]){
+  			this.todoArray.splice(i,1)
+  		}
+  	}
+  }
+
   // submit Form
   todoSubmit(value:any){
     if(value!==""){
@@ -54,3 +63,5 @@ export class AppComponent {
   }
 
 }
+
+
