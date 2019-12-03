@@ -24,6 +24,11 @@ import { Component} from '@angular/core';
 export class AppComponent {
   todoArray=[];
   todo;
+  entities = [
+    { id: 1, name: 'Netanel Basal', isAdmin: true },
+    { id: 2, name: 'John Due', isAdmin: false },
+  ]
+
 
   // add item
    addTodo(value){
