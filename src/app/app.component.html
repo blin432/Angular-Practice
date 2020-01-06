@@ -6,6 +6,8 @@
         <h1 class="text-center ">Todo App</h1>
           <div class="input-group-prepend">
               <input type="text" #todo  class="form-control" placeholder="Add Todo" name="todo" ngModel>
+              <app-edit-input [data]='cost' (focusOut)='saveCost($event)'></app-edit-input>
+              <code> My cost : {{ cost | json}} </code>
               <span class="input-group-text" (click)="addTodo(todo.value)"><i class="material-icons">add</i></span>
           </div>
       </div>

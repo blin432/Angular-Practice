@@ -4,10 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';//had to update
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';//added module to get proper animations
 import { AppComponent } from './app.component';
-
+import { EditInputComponent } from './edit-input/edit-input.component';
+import { AutofocusDirective } from './autofocus.directive';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,EditInputComponent, AutofocusDirective
   ],
   imports: [
     BrowserModule,
@@ -19,3 +20,8 @@ import { AppComponent } from './app.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+
+
+

@@ -24,6 +24,11 @@ import { Component} from '@angular/core';
 export class AppComponent {
   todoArray=[];
   todo;
+  name = 'Hello angular inline input';
+  cost = 100;
+  saveCost(value){
+    this.cost=value;
+  };
   entities = [
     { id: 1, name: 'Netanel Basal', isAdmin: true },
     { id: 2, name: 'John Due', isAdmin: false },
